@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Eastman_Code_Challenge.ucDiagnose"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:vm="clr-namespace:Eastman_Code_Challenge"
+             Loaded="OnLoaded"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="240">
+    <Border Style="{StaticResource Border_For_Forms}">
+        <Grid>
+            <StackPanel Orientation="Vertical" >
+                <TextBlock HorizontalAlignment="Center" >Diagnose</TextBlock>
+                <ListBox Name="ModuloResults" Margin="5"  Height="420"
+                        DisplayMemberPath="Modulo" 
+                        SelectionChanged="ModuloResults_SelectionChanged" 
+                        >
+                </ListBox>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>
